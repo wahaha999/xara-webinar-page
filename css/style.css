@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    background: #f4f5f7;
+    color: #22313e;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: #2e3f4f;
+    height: 60px;
+    text-align: center;
+}
+
+#img-logo {
+    height: 23px;
+    padding: 19px;
+}
+
+section {
+    width: 660px;
+    min-height: calc(100vh - 305px);
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.register-content {
+    width: 50%;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.accordion-content {
+    width: 50%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+form {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 0.3em;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 0.55rem 0.75rem;
+    font-size: .925rem;
+    border: 1px solid #a1a5b7;
+    border-radius: 0.275rem;
+    outline: 0!important;
+    box-sizing: border-box;   
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: #2fa5e7;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25em;
+    outline: 0;
+    cursor: pointer;
+}
+
+#countryCode {
+    width: 40%;
+    margin-right: 5px;
+}
+
+.accordion {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #e6e6e6; 
+}
+
+.accordion:after {
+    content: '\1F893';
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 16px;
+    line-height: 0;
+}
+
+.active:after {
+    content: "\1F892";
+    margin-top: 8px;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+    font-size: 12px;
+}
+
+footer {
+    background: #2e3f4f;
+    height: 75px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.gradient-bar {
+    width: 90%;
+    height: 2px;
+    margin: auto;
+    background: linear-gradient(to right, #2fa5e7, #4741c0, #ff3265);
+}
+
+.ps-1 {
+    padding-left: 10px;
+}
+
+.pe-1 {
+    padding-right: 10px;
+}
+
+.p-1 {
+    padding: 4px;
+}
+
+.p-2 {
+    padding: 10px;
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.f-z-1 {
+    font-size: 14px;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1850px) {
+    section {
+        width: 758px;
+        min-height: calc(100vh - 245px);
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    section {
+        width: 100%;
+        min-height: calc(100vh - 290px);
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .main-container {
+        display: block;
+        padding: 15px;
+    }
+
+    .register-content {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .accordion-content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    footer {
+        height: 100px;
+    }
+}
